@@ -53,7 +53,7 @@ st.markdown(f"""
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('/Users/shrinathkhadake/Downloads/HR_Analytics.csv')
+        df = pd.read_csv('HR_Analytics.csv')
         return df
     except Exception as e:
         st.error(f"Error loading data: {e}")
